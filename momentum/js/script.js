@@ -16,10 +16,10 @@
 
 
 
-import * as Settings from './settings.js'
+import * as Strings from './strings.js';
 import * as Clock from './clock.js';
 import * as Greeting from './greeting.js';
 
-Settings.init();
-Clock.init();
-Greeting.init();
+Strings.init;
+Clock.init;
+Greeting.init;
