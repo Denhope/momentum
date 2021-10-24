@@ -1,37 +1,25 @@
+// const date = new Date();
+// const timeString = document.querySelector('.time');
 
-// console.log(time.textContent);
+// const currentTime = date.toLocaleTimeString();      
 
-function showTime() {    
-    const date = new Date();
-    const currentTime = date.toLocaleTimeString(); 
-    setTimeout(showTime, 1000);   
-    return currentTime;     
-}
-
-
-const time = document.querySelector('.time');
-time.textContent = showTime();
-
-
-const date = document.querySelector('.date');
-date.textContent = showDate();
-
-function showDate() {
-    const date = new Date();
-    const options = {weekday: 'long', day: 'numeric', month: 'long',};
-    const currentDate = date.toLocaleDateString('en-En', options);
-    
-    setTimeout(showDate, 1000);
-    return currentDate;
-}
-
-
+// timeString.textContent = currentTime
 
   
-  
 
- 
+// const dateString = document.querySelector('.date');
+
+// const options = {weekday: 'long', day: 'numeric', month: 'long',};
+// const currentDate = date.toLocaleDateString('en-En', options);       
+
+// dateString.textContent = currentDate
 
 
 
-  
+import * as Settings from './settings.js'
+import * as Clock from './clock.js';
+import * as Greeting from './greeting.js';
+
+Settings.init();
+Clock.init();
+Greeting.init();
