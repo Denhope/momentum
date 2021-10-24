@@ -1,3 +1,9 @@
+export function init(){
+    setInterval(() => {
+        showTime();
+        showDate();
+    }, 1000);
+}
 
 function showTime() {
     const date = new Date();

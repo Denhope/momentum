@@ -16,10 +16,9 @@
 
 
 
-import * as Strings from './strings.js';
-import * as Clock from './clock.js';
+import * as Clock from './clock.js'
 import * as Greeting from './greeting.js';
 
-Strings.init;
-Clock.init;
-Greeting.init;
+// Strings.init();
+Clock.init();
+Greeting.init();
