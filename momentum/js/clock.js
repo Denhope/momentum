@@ -21,7 +21,7 @@ function showDate(){
 
     const options = {weekday: 'long', day: 'numeric', month: 'long',};
     
-    const currentDate = date.toLocaleDateString('ru-Ru', options);       
+    const currentDate = date.toLocaleDateString('en-US', options);       
     
     dateString.textContent = currentDate
 }

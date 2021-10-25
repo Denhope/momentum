@@ -18,7 +18,7 @@ function showGreeting(){
     const lang = localStorage.getItem('lang')
 
     const timesOfDay = getTimesOfDay()
-    let greeting = STRINGS.greetings[timesOfDay]
+    let greeting = STRINGS.greetings['en'][timesOfDay]
 
     const greetingText = document.querySelector('.greeting');
     greetingText.textContent = greeting;
@@ -46,7 +46,7 @@ function updateUserName() {
     const name = localStorage.getItem('name')
     const nameText = document.querySelector('.name')
 
-    nameText.placeholder = STRINGS.greetingPlaceholder['ru']
+    nameText.placeholder = STRINGS.greetingPlaceholder['en']
     if (name) {
         nameText.value = name
     }
