@@ -10,8 +10,7 @@ async function getQuotes() {
    
     const randomQuote = data[Math.floor(Math.random() * quotes.length)];
     quote.textContent = randomQuote.text
-    author.textContent = randomQuote.author
-     
+    author.textContent = randomQuote.author    
 
 }
 
