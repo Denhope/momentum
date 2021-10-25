@@ -15,10 +15,12 @@
 // dateString.textContent = currentDate
 
 
-
+import * as Settings from './settings.js'
 import * as Clock from './clock.js'
 import * as Greeting from './greeting.js';
 
+
 // Strings.init();
+// Settings.init();
 Clock.init();
 Greeting.init();
