@@ -1,6 +1,6 @@
 import {STRINGS} from './strings.js'
 
-function getTimesOfDay(){
+export function getTimesOfDay(){
     const hour = new Date().getHours();
 
     if ((hour >= 6) && (hour < 12)){
@@ -26,14 +26,14 @@ function showGreeting(){
 
 
 
-export function init(){
-   
+export function init(){   
 
     const name = document.querySelector('.name');
     name.addEventListener('input', saveUserName);
 
     showGreeting()
     updateUserName()
+    getTimesOfDay()
 }
 
 
