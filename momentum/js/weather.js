@@ -6,8 +6,7 @@ const humidity = document.querySelector('.humidity');
 
 
 
-async function getWeather() {  
-   
+async function getWeather() {     
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=Минск&lang=en&appid=bf5425e3d31eabbedb3c44fafb1cad2e&units=metric`;
     const res = await fetch(url);
