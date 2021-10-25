@@ -19,6 +19,7 @@ import * as Settings from './settings.js'
 import * as Clock from './clock.js'
 import * as Greeting from './greeting.js';
 import *as Weather from './weather.js';
+import * as Quotes from './quotes.js';
 
 
 // Strings.init();
@@ -26,3 +27,4 @@ import *as Weather from './weather.js';
 Clock.init();
 Greeting.init();
 Weather.init();
+Quotes.init();
