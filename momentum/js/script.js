@@ -25,4 +25,4 @@ import *as Weather from './weather.js';
 // Settings.init();
 Clock.init();
 Greeting.init();
-// Weather.init();
+Weather.init();

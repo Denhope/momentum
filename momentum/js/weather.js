@@ -24,7 +24,12 @@ async function getWeather() {
     
     
   }
-  getWeather();
+//   getWeather();
+
+  export function init(){   
+
+    getWeather();
+}
 
 
 
