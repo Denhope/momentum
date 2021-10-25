@@ -14,16 +14,20 @@ function getTimesOfDay(){
     }
 }
 
-export function init(){
-    document.addEventListener('changeLang', () => {
-        showGreeting()
-        updateUserName()
-    });
+function showGreeting(){
+    const lang = localStorage.getItem('lang')
 
-    document.addEventListener('changeTimesOfDay', () => {
-        showGreeting()
-        updateUserName()
-    });
+    const timesOfDay = getTimesOfDay()
+    let greeting = STRINGS.greetings[timesOfDay]
+
+    const greetingText = document.querySelector('.greeting');
+    greetingText.textContent = greeting;
+}
+
+
+
+export function init(){
+   
 
     const name = document.querySelector('.name');
     name.addEventListener('input', saveUserName);
@@ -31,19 +35,6 @@ export function init(){
     showGreeting()
     updateUserName()
 }
-
-
-function showGreeting(){
-    const lang = localStorage.getItem('lang')
-
-    const timesOfDay = getTimesOfDay()
-    let greeting = STRINGS.greetings[lang][timesOfDay]
-
-    const greetingText = document.querySelector('.greeting');
-    greetingText.textContent = greeting;
-}
-
-
 
 
 function saveUserName(evt){
@@ -55,7 +46,7 @@ function updateUserName() {
     const name = localStorage.getItem('name')
     const nameText = document.querySelector('.name')
 
-    nameText.placeholder = STRINGS.greetingPlaceholder[lang]
+    nameText.placeholder = STRINGS.greetingPlaceholder['ru']
     if (name) {
         nameText.value = name
     }
