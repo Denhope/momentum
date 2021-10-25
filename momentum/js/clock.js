@@ -20,7 +20,8 @@ function showDate(){
     const lang = localStorage.getItem('lang');
 
     const options = {weekday: 'long', day: 'numeric', month: 'long',};
-    const currentDate = date.toLocaleDateString('en-En',  options);       
+    
+    const currentDate = date.toLocaleDateString('ru-Ru',  options);       
     
     dateString.textContent = currentDate
 }
