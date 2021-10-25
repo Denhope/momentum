@@ -20,7 +20,7 @@ async function getWeather() {
     wind.textContent = `Wind speed: ${data.wind.speed} m/s`;
     humidity.textContent = `Humidity: ${data.main.humidity} %`;
     const cityField = document.querySelector('.city')
-    cityField.value = localStorage.getItem('.city') || 'Минск'
+    cityField.value = localStorage.getItem('.city') || 'Minsk'
     
     
   }
