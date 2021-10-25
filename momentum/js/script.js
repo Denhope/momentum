@@ -18,9 +18,11 @@
 import * as Settings from './settings.js'
 import * as Clock from './clock.js'
 import * as Greeting from './greeting.js';
+import *as Weather from './weather.js';
 
 
 // Strings.init();
 // Settings.init();
 Clock.init();
 Greeting.init();
+// Weather.init();
