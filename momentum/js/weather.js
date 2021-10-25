@@ -30,13 +30,3 @@ async function getWeather() {
     getWeather();
 }
 
-
-
-
-  
-
-
-
-//   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=ru&appid=08f2a575dda978b9c539199e54df03b0&units=metric`;
-
-  

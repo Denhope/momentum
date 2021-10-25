@@ -7,19 +7,13 @@ async function getQuotes() {
     const quotes = './js/data.json';
     const res = await fetch(quotes);
     const data = await res.json(); 
-    
-    // console.log(data);   
+   
     const randomQuote = data[Math.floor(Math.random() * quotes.length)];
     quote.textContent = randomQuote.text
     author.textContent = randomQuote.author
-
-    // quote.textContent = `${data[Math.floor(Math.random() * quotes.length)].text}`;
-    // quote.textContent =  randomQuote(data)
-    // author.textContent = ` ${data[].author}`; 
-
+     
 
 }
-
 
 
 export function init(){   
@@ -29,7 +23,6 @@ export function init(){
     changeQuote.addEventListener('click',() => {
         getQuotes();
     })
-
 
 }
 
