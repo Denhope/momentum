@@ -33,7 +33,7 @@ export function init(){
 }
 
 
-function showGreeting() {
+function showGreeting(){
     const lang = localStorage.getItem('lang')
 
     const timesOfDay = getTimesOfDay()
@@ -42,6 +42,7 @@ function showGreeting() {
     const greetingText = document.querySelector('.greeting');
     greetingText.textContent = greeting;
 }
+
 
 
 
