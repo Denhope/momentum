@@ -1,13 +1,13 @@
 
 export function init() {
 
-   const weatherIcon = document.querySelector('.weather-icon');
+  const weatherIcon = document.querySelector('.weather-icon');
   const temperature = document.querySelector('.temperature');
   const weatherDescription = document.querySelector('.weather-description');
   const city = document.querySelector('.city');
   const wind = document.querySelector('.wind');
   const humidity = document.querySelector('.humidity');
-  const error = document.querySelector('.weather-error');
+  const  WeatherError = document.querySelector('.weather-error');
   
   async function getWeather() {  
       try {
@@ -15,7 +15,7 @@ export function init() {
           const res = await fetch(url);
           const data = await res.json(); 
 
-          error.textContent = '';
+          WeatherError.textContent = '';
           weatherIcon.className = 'weather-icon owf';
           weatherIcon.classList.add(`owf-${data.weather[0].id}`);
           temperature.textContent = `${data.main.temp.toFixed(0)}°C`;
@@ -26,10 +26,10 @@ export function init() {
   
         } catch(err) {
           if (city.value.length == 0) {
-              error.textContent = ``;
+            WeatherError.textContent = ``;
           } 
           else {
-              error.textContent = `Error! City '${city.value}' not found, pleese try again!`;
+            WeatherError.textContent = `Error! City '${city.value}' not found, pleese try again!`;
           }
           
           weatherIcon.className = 'weather-icon owf';
@@ -42,7 +42,7 @@ export function init() {
 
   function setCity(event) {
       if (event.code === 'Enter' && city.value.length == 0) {
-          error.textContent = `Error! Enter some city, please!`;
+          WeatherError.textContent = `Error! Enter some city, please!`;
       }
   }
 
@@ -51,7 +51,7 @@ export function init() {
 
   
 
-  city.placeholder = '[Enter city ]'; 
+  city.placeholder = '[Enter city]'; 
 
 
 
