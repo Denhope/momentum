@@ -19,10 +19,10 @@ async function getWeather() {
         error.textContent = '';
         weatherIcon.className = 'weather-icon owf';
         weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-        temperature.textContent = `${data.main.temp}°C`;
+        temperature.textContent = `${data.main.temptoFixed(0)}°C`;
         weatherDescription.textContent = data.weather[0].description;
-        wind.textContent = `Wind speed: ${data.wind.speed} m/s`;
-        humidity.textContent = `Humidity: ${data.main.humidity} %`;
+        wind.textContent = `Wind speed: ${data.wind.speed.toFixed(0)} m/s`;
+        humidity.textContent = `Humidity: ${data.main.humidity.toFixed(0)} %`;
         
         city.value = localStorage.getItem('.city') || 'Minsk'
 
