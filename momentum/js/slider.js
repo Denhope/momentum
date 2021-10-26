@@ -11,6 +11,7 @@ getRandomNum();
 // function getRandomNum(max, min) {
 //     randomNum = Math.floor(Math.random() * (max - min)) + min;       
 // }
+// getRandomNum(21, 1); 
 
 function setImage(){
 
