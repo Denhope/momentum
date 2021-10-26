@@ -3,15 +3,14 @@ const body = document.querySelector('.body');
 let randomNum;
 
 
-// function getRandomNum() {
-//     randomNum = Math.floor(20 * Math.random()) + 1;   
-// }
-// getRandomNum(); 
-
-function getRandomNum(max, min) {
-    randomNum = Math.floor(Math.random() * (max - min)) + min;   
-    
+function getRandomNum() {
+    randomNum = Math.floor(20 * Math.random()) + 1;   
 }
+getRandomNum(); 
+
+// function getRandomNum(max, min) {
+//     randomNum = Math.floor(Math.random() * (max - min)) + min;       
+// }
 
 function setImage(){
 
@@ -55,10 +54,6 @@ function getSlidePrew() {
     
     setImage();
 }
-
-
-
-
 // function getSlideNext() {
 //     if (randomNum < 20) {
 //       randomNum = randomNum + 1;
@@ -92,5 +87,5 @@ export function init(){
     getSlideNext()
     setImage()
     setListeners()
-    getRandomNum(21, 1); 
+    getRandomNum(); 
 }
