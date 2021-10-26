@@ -27,7 +27,7 @@ async function getWeather() {
 
   }catch (err) {
     if (city.value.length == 0) {
-      weatherError.textContent = ``;
+      weatherError.textContent = `Error! Enter some city!`;
     } 
     else {
       weatherError.textContent = `Error! City '${city.value}' not found!`;
@@ -40,11 +40,8 @@ async function getWeather() {
     humidity.textContent = '';
     
   }
-}    
-        
-      
-
-        
+}          
+  
         
 city.value = localStorage.getItem('.city') || 'Minsk'
     
