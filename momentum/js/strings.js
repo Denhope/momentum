@@ -1,11 +1,6 @@
 export const STRINGS = {
     greetings: {
-        'ru': {
-            'morning': 'Доброе утро',
-            'afternoon': 'Добрый день',
-            'evening': 'Добрый вечер',
-            'night': 'Доброй ночи'
-        },
+        
         'en': {
             'morning': 'Good morning',
             'afternoon': 'Good afternoon',
@@ -15,8 +10,8 @@ export const STRINGS = {
     },
         
     greetingPlaceholder: {
-        'ru':'Введите имя',
-        'en': 'Enter name'
+        
+        'en': '[Enter name]'
     },
        
     
