@@ -27,34 +27,34 @@ function setImage(){
 const slidePrev = document.querySelector('.slide-prev');
 const slideNext = document.querySelector('.slide-next');
 
-function getSlideNext() {
-    randomNum = randomNum + 1 <= 20 ? randomNum - 1 : 1;
-    setImage()
-}
-
-function getSlidePrew() {
-    randomNum = randomNum - 1 > 0 ? randomNum - 1 : 20;
-    setImage()
-}
 // function getSlideNext() {
-
-//     if (randomNum === 20) {
-//         randomNum = 1;
-//     } else {
-//         randomNum++;   
-//     }
-//     setImage();
+//     randomNum = randomNum + 1 <= 20 ? randomNum - 1 : 1;
+//     setImage()
 // }
 
 // function getSlidePrew() {
-//     if (randomNum === 1) {
-//         randomNum = 20;
-//     } else {
-//         randomNum--;
-//     }
-    
-//     setImage();
+//     randomNum = randomNum - 1 > 0 ? randomNum - 1 : 20;
+//     setImage()
 // }
+function getSlideNext() {
+
+    if (randomNum === 20) {
+        randomNum = 1;
+    } else {
+        randomNum++;   
+    }
+    setImage();
+}
+
+function getSlidePrew() {
+    if (randomNum === 1) {
+        randomNum = 20;
+    } else {
+        randomNum--;
+    }
+    
+    setImage();
+}
 
 
 
