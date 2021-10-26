@@ -10,7 +10,7 @@ function setImage(){
     const timesOfDay = Greeting.getTimesOfDay();
     const bgNum = getRandomNum();
     const body = document.querySelector('.body');
-    let imageUrl = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timesOfDay}/${bgNum.toString().padStart(2,'0')}.jpg`;
+    let imageUrl = `https://raw.githubusercontent.com/Denhope/stage1-tasks/assets/images/${timesOfDay}/${bgNum.toString().padStart(2,'0')}.jpg`;
     document.body.style.backgroundImage = `url(${imageUrl})`;    
 
 }
