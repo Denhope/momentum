@@ -6,7 +6,7 @@ let randomNum;
 // function getRandomNum() {
 //     randomNum = Math.floor(20 * Math.random()) + 1;   
 // }
-getRandomNum(); 
+// getRandomNum(); 
 
 function getRandomNum(max, min) {
     randomNum = Math.floor(Math.random() * (max - min)) + min;   
