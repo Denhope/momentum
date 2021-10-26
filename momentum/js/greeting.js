@@ -41,8 +41,7 @@ function saveUserName(evt){
     localStorage.setItem('name', evt.target.value )
 }
 function updateUserName() {
-    const lang = localStorage.getItem('lang')
-
+   
     const name = localStorage.getItem('name')
     const nameText = document.querySelector('.name')
 
