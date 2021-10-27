@@ -10,7 +10,7 @@ export function init(){
         },
         {
           title: 'Ennio Morricone',
-          src: 'assets/sounds/Ennio Morricone.mp3',
+          src: '../assets/sounds/Ennio Morricone.mp3',
           duration: '01:20'
         },  
         {      
@@ -20,7 +20,7 @@ export function init(){
         },
         {
           title: 'Summer Wind',
-          src: 'assets/sounds/Summer Wind.mp3',
+          src: '../assets/sounds/Summer Wind.mp3',
           duration: '01:20'
         }
        
