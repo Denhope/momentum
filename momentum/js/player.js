@@ -1,9 +1,14 @@
 
 import playList from "./playList.js";
 
-export function init() {   
+export function init() {
+    
+
     
     const playListContainer = document.querySelector('.play-list');
+
+
+
     playList.forEach(el => {
         const li = document.createElement('li');// здесь ваш код
         playListContainer.append(li);
