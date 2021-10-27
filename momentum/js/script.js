@@ -4,7 +4,7 @@ import *as Weather from './weather.js';
 import * as Quotes from './quotes.js';
 import * as Slider from './slider.js';
 // import  playList from './playList.js';
-import * as Player from './player.js';
+// import * as Player from './player.js';
 
 
 import * as Settings from './settings.js'
@@ -18,7 +18,7 @@ Greeting.init();
 Weather.init();
 Quotes.init();
 Slider.init();
-Player.init();
+// Player.init();
 // playList;
 
 // console.log(playList);
