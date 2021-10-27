@@ -3,7 +3,12 @@ import * as Greeting from './greeting.js';
 import *as Weather from './weather.js';
 import * as Quotes from './quotes.js';
 import * as Slider from './slider.js';
+import  playList from './playList.js';
+import * as Player from './player.js';
+
+
 import * as Settings from './settings.js'
+
 
 
 // Strings.init();
@@ -13,7 +18,10 @@ Greeting.init();
 Weather.init();
 Quotes.init();
 Slider.init();
+Player.init();
+// playList;
 
+console.log(playList);
 console.log(`Просьба к проверяющему: Выполните проверку и оцените работу в крайний день, если возможно,
 постораюсь сделать мах. Спасибо за понимание,
 
