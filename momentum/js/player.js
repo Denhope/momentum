@@ -15,6 +15,26 @@ export function init() {
         li.classList.add('play-item');
         li.textContent = el.title;   
     })
+
+
+
+    const playBtn = document.querySelector('.play');
+    const prevBtn= document.querySelector('.play-prev');
+    const nextBtn = document.querySelector('play-next');
+
+    const audio = document.querySelector('audio');
+
+    
+    function playAudio() {
+        audio.currentTime = 0;
+        audio.play();
+    }
+    function pauseAudio() {
+        audio.pause();
+    }
+
 }
+
+
 
 
