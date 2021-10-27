@@ -24,30 +24,30 @@ playList.forEach(el => {
 
 function playAudio() {
     audio.src = playList[playNum].src;
-    playlist.children[playNum].classList.toggle('item-active')
+    playlist.children[playNum].classList.toggle('item-active');
     if(!isPlay) {
         if(isCurr) {
         isCurr = false;
         audio.currentTime = 0;
         } else {
-        playButton.classList.add('pause')
-        audio.currentTime = 0;
-        audio.play();
-        isPlay = true
+            playButton.classList.add('pause')
+            audio.currentTime = 0;
+            audio.play();
+            isPlay = true;
         }
         
     } else {
         if(isCurr) {
-        isCurr = false;
-        audio.play();
+            isCurr = false;
+            audio.play();
         } else {
-        playButton.classList.remove('pause')
-        audio.pause();
-        isPlay = false
+            playButton.classList.remove('pause')
+            audio.pause();
+            isPlay = false;
         }
         
     }
-    }
+}
 
 
 function playPrevius() {
@@ -63,7 +63,7 @@ function playPrevius() {
 function playNext() {
     playlist.children[playNum].classList.toggle('item-active')
     playNum = playNum + 1;
-    isCurr = true
+    isCurr = true;
     if(playNum > playList.length - 1) {
         playNum = 0;
     }
@@ -76,7 +76,7 @@ previosButton.addEventListener('click', playPrevius)
 nextButton.addEventListener('click', playNext)
 
 
-function init() { 
+export function init() { 
     playNext();
     playPrevius();
     playAudio()
