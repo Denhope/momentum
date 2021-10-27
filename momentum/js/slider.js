@@ -8,11 +8,6 @@ function getRandomNum() {
 }
 getRandomNum(); 
 
-// function getRandomNum(max, min) {
-//     randomNum = Math.floor(Math.random() * (max - min)) + min;       
-// }
-// getRandomNum(21, 1); 
-
 function setImage(){
 
     const img = new Image();
@@ -27,15 +22,6 @@ function setImage(){
 const slidePrev = document.querySelector('.slide-prev');
 const slideNext = document.querySelector('.slide-next');
 
-// function getSlideNext() {
-//     randomNum = randomNum + 1 <= 20 ? randomNum - 1 : 1;
-//     setImage()
-// }
-
-// function getSlidePrew() {
-//     randomNum = randomNum - 1 > 0 ? randomNum - 1 : 20;
-//     setImage()
-// }
 function getSlideNext() {
 
     if (randomNum === 20) {
@@ -55,24 +41,7 @@ function getSlidePrew() {
     
     setImage();
 }
-// function getSlideNext() {
-//     if (randomNum < 20) {
-//       randomNum = randomNum + 1;
-//     } else {
-//       randomNum = 1;
-//     }
-//     setImage();  
-// }
 
-// function getSlidePrew() {
-//     if (randomNum > 1) {
-//   randomNum = randomNum - 1;
-//     } else {
-//       randomNum = 20;
-//     }
-//     console.log(randomNum);
-//     setImage();
-// }
 function setListeners() {
     slideNext.addEventListener('click', () =>{
         getSlideNext();
