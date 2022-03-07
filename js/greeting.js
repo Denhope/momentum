@@ -16,10 +16,8 @@ export function getTimesOfDay() {
 
 function showGreeting() {
   const lang = localStorage.getItem('lang');
-
   const timesOfDay = getTimesOfDay();
   let greeting = STRINGS.greetings['en'][timesOfDay];
-
   const greetingText = document.querySelector('.greeting');
   greetingText.textContent = greeting;
 }
@@ -27,7 +25,6 @@ function showGreeting() {
 export function init() {
   const name = document.querySelector('.name');
   name.addEventListener('input', saveUserName);
-
   showGreeting();
   updateUserName();
   getTimesOfDay();

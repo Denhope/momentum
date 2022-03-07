@@ -35,7 +35,6 @@ function getSlidePrew() {
   } else {
     randomNum--;
   }
-
   setImage();
 }
 

@@ -1,5 +1,3 @@
-// import playList from "./playList.js";
-
 export function init() {
   const playList = [
     {
