@@ -1,15 +1,12 @@
-import * as Clock from './clock.js'
+import * as Clock from './clock.js';
 import * as Greeting from './greeting.js';
-import *as Weather from './weather.js';
+import * as Weather from './weather.js';
 import * as Quotes from './quotes.js';
 import * as Slider from './slider.js';
 // import  playList from './playList.js';
 import * as Player from './player.js';
 
-
-import * as Settings from './settings.js'
-
-
+import * as Settings from './settings.js';
 
 // Strings.init();
 // Settings.init();
@@ -66,4 +63,4 @@ console.log(`Просьба к проверяющему: Выполните пр
 18) трек, который в данный момент проигрывается, в блоке Play-list выделяется стилем 
 
 
-`)
+`);
